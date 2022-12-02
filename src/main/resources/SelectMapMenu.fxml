@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #003333;" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SelectMapView">
+    <Button onAction="#next" graphicTextGap="0.0" layoutX="471.0" layoutY="304.0" mnemonicParsing="false"
+            prefHeight="41.0" prefWidth="70.0" text="Next" textAlignment="CENTER">
+        <font>
+            <Font name="Forte" size="20.0"/>
+        </font>
+    </Button>
+    <Button onAction="#select" layoutX="257.0" layoutY="284.0" mnemonicParsing="false" text="Select">
+        <font>
+            <Font name="Forte" size="22.0"/>
+        </font>
+    </Button>
+    <Button onAction="#addToFavourites" layoutX="205.0" layoutY="334.0" mnemonicParsing="false" text="Add To Favorites">
+        <font>
+            <Font name="Forte" size="22.0"/>
+        </font>
+    </Button>
+    <Button onMouseClicked="#back" layoutX="14.0" layoutY="318.0" mnemonicParsing="false" prefHeight="32.0"
+            prefWidth="49.0" text="Back">
+        <font>
+            <Font name="Georgia" size="13.0"/>
+        </font>
+    </Button>
+    <GridPane fx:id="gridPane" layoutX="148.0" layoutY="44.0" prefHeight="210.0" prefWidth="310.0"
+              style="-fx-background-color: #000000;"/>
+    <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#changeSoundStatus" prefHeight="32.0"
+            prefWidth="100.0" text="Mute/UnMute"/>
+</AnchorPane>

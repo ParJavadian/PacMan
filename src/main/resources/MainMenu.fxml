@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainView">
+    <ImageView fitHeight="400.0" fitWidth="606.0" layoutX="-6.0">
+        <Image url="@images/pacman_background8.jpg"/>
+    </ImageView>
+    <Button defaultButton="true" layoutX="131.0" layoutY="56.0" mnemonicParsing="false"
+            prefHeight="58.0" prefWidth="149.0" text="Start New Game" onAction="#startNewGame">
+        <font>
+            <Font name="Georgia" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutX="148.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#openChangePasswordMenu"
+            prefHeight="40.0" prefWidth="114.0" text="Change password">
+        <font>
+            <Font name="Georgia" size="12.0"/>
+        </font>
+    </Button>
+    <Label alignment="CENTER" layoutX="98.0" layoutY="7.0" prefHeight="40.0" prefWidth="399.0" styleClass="title"
+           text="WELCOME TO MAIN MENU!" textFill="WHITE">
+        <font>
+            <Font name="Stencil" size="32.0"/>
+        </font>
+    </Label>
+    <Button layoutX="326.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#openScoreboard" prefHeight="40.0"
+            prefWidth="114.0" text="See Scoreboard">
+        <font>
+            <Font name="Georgia" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutX="326.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="40.0"
+            prefWidth="114.0" text="Logout">
+        <font>
+            <Font name="Georgia" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutX="148.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#deleteAccount" prefHeight="40.0"
+            prefWidth="114.0" text="Delete Account">
+        <font>
+            <Font name="Georgia" size="12.0"/>
+        </font>
+    </Button>
+    <Button onAction="#continueGame" defaultButton="true" layoutX="309.0" layoutY="56.0" mnemonicParsing="false"
+            prefHeight="58.0" prefWidth="149.0" text="Continue previous game">
+        <font>
+            <Font name="Georgia" size="12.0"/>
+        </font>
+    </Button>
+    <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false"
+            onMouseClicked="#changeSoundStatus" prefHeight="32.0" prefWidth="100.0" text="Mute/UnMute"/>
+</AnchorPane>
